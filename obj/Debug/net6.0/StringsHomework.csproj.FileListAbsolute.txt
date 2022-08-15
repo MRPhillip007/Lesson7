@@ -1,0 +1,15 @@
+C:\BettrootCourses\lesson07\Homework\StringsHomework\bin\Debug\net6.0\StringsHomework.exe
+C:\BettrootCourses\lesson07\Homework\StringsHomework\bin\Debug\net6.0\StringsHomework.deps.json
+C:\BettrootCourses\lesson07\Homework\StringsHomework\bin\Debug\net6.0\StringsHomework.runtimeconfig.json
+C:\BettrootCourses\lesson07\Homework\StringsHomework\bin\Debug\net6.0\StringsHomework.dll
+C:\BettrootCourses\lesson07\Homework\StringsHomework\bin\Debug\net6.0\StringsHomework.pdb
+C:\BettrootCourses\lesson07\Homework\StringsHomework\obj\Debug\net6.0\StringsHomework.csproj.AssemblyReference.cache
+C:\BettrootCourses\lesson07\Homework\StringsHomework\obj\Debug\net6.0\StringsHomework.GeneratedMSBuildEditorConfig.editorconfig
+C:\BettrootCourses\lesson07\Homework\StringsHomework\obj\Debug\net6.0\StringsHomework.AssemblyInfoInputs.cache
+C:\BettrootCourses\lesson07\Homework\StringsHomework\obj\Debug\net6.0\StringsHomework.AssemblyInfo.cs
+C:\BettrootCourses\lesson07\Homework\StringsHomework\obj\Debug\net6.0\StringsHomework.csproj.CoreCompileInputs.cache
+C:\BettrootCourses\lesson07\Homework\StringsHomework\obj\Debug\net6.0\StringsHomework.dll
+C:\BettrootCourses\lesson07\Homework\StringsHomework\obj\Debug\net6.0\refint\StringsHomework.dll
+C:\BettrootCourses\lesson07\Homework\StringsHomework\obj\Debug\net6.0\StringsHomework.pdb
+C:\BettrootCourses\lesson07\Homework\StringsHomework\obj\Debug\net6.0\StringsHomework.genruntimeconfig.cache
+C:\BettrootCourses\lesson07\Homework\StringsHomework\obj\Debug\net6.0\ref\StringsHomework.dll
