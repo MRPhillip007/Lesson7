@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text;
 using static System.Net.Mime.MediaTypeNames;
 
@@ -6,24 +7,48 @@ class Homework
 {
     static void Main()
     {
-        Console.WriteLine(SortInputStringByAlphabet("hello")); 
+        Console.WriteLine(SortInputStringByAlphabet("hello"));
+        Console.WriteLine(Compare("Hello", "World"));
+        Duplicate("Hello and hi");
     }
 
     static string SortInputStringByAlphabet(string str) // hello - > ehllo
     {
-        char[] chars = str.ToCharArray();
+        char[] strCharsArray = str.ToCharArray();
 
-        foreach (char c in chars)
-            Console.Write(c + " ");
-        Array.Sort(chars);
+        for (int i = 1; i < strCharsArray.Length; i++)
+        {
+            for (int j = 0; j < strCharsArray.Length - 1; j++)
+            {
+                int result = strCharsArray[j].CompareTo(strCharsArray[j + 1]);
 
-        return new string(chars);
+                if (result > 0)
+                {
+                    char temp = strCharsArray[j];
+                    strCharsArray[j] = strCharsArray[j + 1];
+                    strCharsArray[j + 1] = temp;
+                }
+                
+            }
+        }
+        return String.Join("", strCharsArray);
     }
 
-    enum CharactersAlphabetPosition
+    static bool Compare(string str1, string str2)
     {
-        samePosition = 0,
-        Before = -13,
-        After = 25,
+        bool result = false;
+        if (str1.Length == str2.Length)
+        {
+            foreach(char first in str1)
+            {
+                foreach(char second in str2)
+                {
+                    result = first == second ? true : false;
+                }
+            }
+            return result;
+        }
+        return false;
+
     }
 }
