@@ -9,7 +9,11 @@ class Homework
     {
         Console.WriteLine(SortInputStringByAlphabet("hello"));
         Console.WriteLine(Compare("Hello", "World"));
-        Duplicate("Hello and hi");
+        char[] result = Duplicate("HheEEeeldfsdfsdfsdllo");
+        foreach (char c in result)
+        {
+            Console.Write(c + " ");
+        }
     }
 
     static string SortInputStringByAlphabet(string str) // hello - > ehllo
@@ -34,6 +38,24 @@ class Homework
         return String.Join("", strCharsArray);
     }
 
+    static char[] Duplicate(string str)
+    {
+        char[] chars = str.ToLower().ToCharArray();
+        char[] result = new char[str.Length];
+
+        for (int i = chars.Length -1; i >= 0; i--)
+        {
+            for (int j = i-1; j >=0 ; j--)
+            {
+                if (chars[i] == chars[j])
+                {
+                    result[i] = chars[j];
+                }
+            }
+        }
+        return result;
+
+    }
     static bool Compare(string str1, string str2)
     {
         bool result = false;
