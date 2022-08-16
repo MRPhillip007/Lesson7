@@ -14,6 +14,8 @@ class Homework
         {
             Console.Write(c + " ");
         }
+        Console.WriteLine();
+        Analyze("jafd%*6549273645GHdskh|gsdgh");
     }
 
     static string SortInputStringByAlphabet(string str) // hello - > ehllo
@@ -71,6 +73,27 @@ class Homework
             return result;
         }
         return false;
+    }
 
+    static void Analyze(string str)
+    {
+        int specialChar = 0, digits = 0, alphabeticChars = 0;
+        for (int i = 0; i < str.Length; i++)
+        {
+            if (Char.IsLetter(str[i]))
+            {
+                alphabeticChars++;
+            }
+            if (Char.IsDigit(str[i]))
+            {
+                digits++;
+            }
+            if (!Char.IsLetterOrDigit(str[i]))
+            {
+                specialChar++;
+            }
+        }
+
+        Console.WriteLine($"string: {str} has: \n\t {alphabeticChars} alphabetic Chars \n\t {digits} digits \n\t {specialChar} special characters");
     }
 }
